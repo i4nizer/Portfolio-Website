@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: min(30px, 4dvw);
+}
+
+h2 {
+    font-size: min(24px, 3.2dvw);
+}
+
+h3 {
+    font-size: min(20px, 2.6dvw);
+}
+
+p, a {
+    font-size: min(16px, 2.1dvw);
+}
+
+
+
+
+
+.container-welcome {
+    height: 56.25dvw;
+    aspect-ratio: 16 / 9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('./images/ethan-hoover-eIVJAkj1uCs-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: grayscale(100%);
+    transition-duration: 500ms;
+}
+
+.container-welcome:hover {
+    filter: grayscale(0);
+}
+
+.welcome-nav {
+    width: calc(100% - 10dvw);
+    height: 4dvw;
+    
+    padding: 2.5dvw 5dvw;
+
+    gap: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.welcome-nav a {
+    color: gray;
+    text-decoration: none;
+    transition-duration: 500ms;
+}
+
+.container-welcome:hover .welcome-nav a {
+    color: lightgray;
+}
+
+.welcome-nav a:hover {
+    color: white !important;
+}
+
+.welcome-card {
+    width: 100%;
+    height: calc(100% - 30px);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+}
+
+.welcome-card h1 {
+    color: white;
+}
+
+.welcome-card p {
+    color: transparent;
+    transition-duration: 500ms;
+}
+
+.container-welcome:hover .welcome-card p {
+    color: #e47025;
+}
+
+
+
+
+
+.container-contact {
+    width: 100%;
+    height: auto;
+    padding: 5dvw 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+}
+
+.container-contact h2 {
+    padding: 0 0 12px 0;
+}
+
+.container-contact p {
+    padding: 4px 8px;
+}
+
+
+
+
+
+.container-skills {
+    width: 100%;
+    height: auto;
+    
+    padding: 6dvw 0;
+
+    background-color: lightgray;
+    transition-duration: 500ms;
+}
+
+.container-skills:hover {
+    background-color: #efc070;
+}
+
+.container-skills h2 {
+    width: 100%;
+    height: auto;
+    padding: 1dvw 0;
+    text-align: center;
+    transition-duration: 500ms;
+}
+
+.container-skills:hover h2 {
+    color: white;
+}
+
+.skill-card-container {
+    width: 100%;
+    height: auto;
+
+    padding: 6dvw 0;
+
+    gap: 5dvw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skill-card {
+    width: min(300px, 30dvw);
+    height: min(320px, 32dvw);
+
+    padding: 4dvw 2dvw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-radius: 12px;
+    background-color: white;
+
+    transition-duration: 250ms;
+}
+
+.skill-card:hover {
+    box-shadow: 0 0 2dvw dimgray;
+}
+
+.skill-card h3 {
+    width: 80%;
+
+    text-align: center;
+    padding: 1dvw 0 2dvw 0;
+    
+    border-bottom: 2px solid lightgray;
+}
+
+.skill-card p {
+    width: 80%;
+    text-align: center;
+    padding: 3dvw 0 0 0;
+}
+
+
+
+
+
+.container-programming {
+    width: 100%;
+    height: auto;
+    padding: 6dvw 0;
+
+    gap: 2dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-programming h2 {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 3dvw 0;
+}
+
+.programming-strip {
+    width: min(800px, 90%);
+    height: 75px;
+
+    overflow: hidden;
+    border-radius: 1dvw;
+    box-shadow: 0 0 1dvw lightgray;
+
+    transition-duration: 500ms;
+}
+
+.programming-strip h3 {
+    width: calc(100% - 10dvw);
+    height: 75px;
+ 
+    line-height: 75px;
+    padding: 0 5dvw;
+ 
+    background-color: #efc070;
+    transition-duration: 500ms;
+}
+
+.programming-strip p {
+    width: calc(100% - 20dvw);
+    height: 125px;
+
+    padding: 32px;
+
+    opacity: 0;
+    transition-duration: 500ms;
+}
+
+.programming-strip:hover h3 {
+    background-color: #e47025;
+}
+
+.programming-strip:hover p {
+    opacity: 1;
+}
+
+.programming-strip:hover {
+    height: 200px;
+}
+
+
+
+
+
+footer {
+    width: calc(100% - 10dvw);
+    height: 70px;
+
+    padding: 0 5dvw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    background-color: black;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
